@@ -54,7 +54,7 @@ public class SeedData implements CommandLineRunner
         // user
         ArrayList<UserRoles> users = new ArrayList<>();
         users.add(new UserRoles(new User(), userRole));
-        User u3 = new User("user", "password!", users);
+        User u3 = new User("user", "password", users);
         u3.getQuotes().add(new Quote("Live long and prosper", u3));
         u3.getQuotes().add(new Quote("The enemy of my enemy is the enemy I kill last", u3));
         u3.getQuotes().add(new Quote("Beam me up", u3));
