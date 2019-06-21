@@ -22,7 +22,7 @@ public class Book extends Auditable{
     @JoinTable(name = "bookauthors",
             joinColumns = {@JoinColumn(name = "bookid")},
             inverseJoinColumns = {@JoinColumn(name = "authorid")})
-    @JsonIgnoreProperties("students")
+    @JsonIgnoreProperties("books")
     private List<Author> authors = new ArrayList<>();
 
     public Book() {}

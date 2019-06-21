@@ -18,7 +18,7 @@ public class Author extends Auditable {
     private String firstname;
 
     @ManyToMany(mappedBy = "authors")
-    @JsonIgnoreProperties("students")
+    @JsonIgnoreProperties("books")
     private List<Book> books = new ArrayList<>();
 
     public Author() {

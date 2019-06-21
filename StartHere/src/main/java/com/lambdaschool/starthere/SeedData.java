@@ -60,6 +60,6 @@ public class SeedData implements CommandLineRunner
         u3.getQuotes().add(new Quote("Beam me up", u3));
         userService.save(u3);
 
-        
+
     }
 }
