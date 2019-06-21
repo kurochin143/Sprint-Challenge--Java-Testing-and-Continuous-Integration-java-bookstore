@@ -9,5 +9,6 @@ public interface BookService {
     ArrayList<Book> findAll();
     void update(long id, Book book);
     void delete(long id);
+    void setBookAuthor(long bookid, long authorid);
 
 }

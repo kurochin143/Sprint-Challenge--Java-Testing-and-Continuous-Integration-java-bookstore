@@ -135,8 +135,8 @@
     </dependencies>
 
     <build>
-<!--        <finalName>${project.artifactId}</finalName>-->
-        <finalName>jrmmba-starthere</finalName>
+        <finalName>${project.artifactId}</finalName>
+<!--        <finalName>jrmmba-starthere</finalName>-->
 
         <plugins>
             <plugin>
@@ -151,11 +151,11 @@
                 <artifactId>heroku-maven-plugin</artifactId>
                 <version>2.0.3</version>
                 <configuration>
-                    <appName>jrmmba-starthere</appName>
+                    <appName>israel-sprint14</appName>
                     <includeTarget>false</includeTarget>
                     <includes>
-                        <!--   For windows      <include>${project.build.directory}\${project.build.finalName}.jar</include>-->
-                        <include>${project.build.directory}/${project.build.finalName}.jar</include>
+                           <include>${project.build.directory}\${project.build.finalName}.jar</include>
+<!--                        <include>${project.build.directory}/${project.build.finalName}.jar</include>-->
                     </includes>
                     <jdkVersion>${java.version}</jdkVersion>
                     <processTypes>
